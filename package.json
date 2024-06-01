@@ -1,0 +1,23 @@
+{
+  "name": "soliditytest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "deploy:local": "npx hardhat run scripts/deployContracts.js",
+    "deploy:sepolia": "npx hardhat run scripts/deployContracts.js --network sepolia",
+    "verify": "npx hardhat ignition verify chain-11155111"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.4",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "hardhat": "^2.22.4"
+  },
+  "dependencies": {
+    "chai-as-promised": "^7.1.2"
+  }
+}
