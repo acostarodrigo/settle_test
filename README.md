@@ -31,7 +31,7 @@ Complete the following steps:
 
 1. Clone this repository by executing:
 ```
-git clone sdfsdfs
+git clone https://github.com/acostarodrigo/settle_test.git
 ```
 
 2. Build a docker container by passing the 
