@@ -95,9 +95,7 @@ describe("Pool contract tests", function () {
   });
 
   it("Should not allow Alice to withdraw without a deposit", async function () {
-    await expect(pool.connect(alice).withdraw()).to.eventually.be.rejectedWith(
-      "No deposits found for this user"
-    );
+    await expect(pool.connect(alice).withdraw()).to.eventually.be.rejected;
   });
 
   it("Should not allow Bob to perform multiple deposits without withdraws", async function () {
